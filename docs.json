@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Mantrika.ai",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#007AFF",
+    "light": "#007AFF",
+    "dark": "#007AFF"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -14,11 +14,22 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Recruit Edge",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+               {
+                "group": "Features",            
+                "pages": [
+                  "RecruitEdge/features/index",
+                  "RecruitEdge/features/EVP",
+                  "RecruitEdge/features/sourcing",
+                  "RecruitEdge/features/screening",
+                  "RecruitEdge/features/assessment",
+                  "RecruitEdge/features/interview"
+      ]
+    },
+              "RecruitEdge/kpi_metrics",
+              "RecruitEdge/calculations",
+              "RecruitEdge/integrations"
             ]
           },
           {
