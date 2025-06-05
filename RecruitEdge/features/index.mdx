@@ -1,71 +1,146 @@
 ---
 title: Demand Generation
-description: "Welcome to the home of your new documentation"
 ---
 
-<img
-  className="hidden light:block"
-  src="/images/dashboard.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/dashboard.png"
-  alt="Hero Dark"
-/>
+## 🎯 Purpose
+The Demand Generation module initiates the recruitment supply chain of Recruit Edge in Mantrika.ai by enabling recruiters to craft structured, data-rich, and market-aware job demands. It leverages both Location Intelligence and Competitive Intelligence to equip recruiters with actionable market insights at the very start of the hiring process. By combining an AI-driven Location Favorability Index (LFI) with a real-time Competitive Market Fit Index (DMFI), this capability ensures that every job demand is not only structured with clear role requirements but also optimized for:
+- Where to source candidates—prioritizing cities and regions with the best talent supply, cost efficiency, and hiring success rates.
+- How to position the role—benchmarking compensation, skill scarcity, and competitor hiring activity to maximize attractiveness.
 
-## Setting up
+## 🗺️ Scope 
+To deliver these insights, Demand Generation ingests and processes a broad range of data, including:
+- Internal Hiring Metrics: Offer-to-join rates, time-to-fill, and SWTT success patterns.
+- Location Signals: Talent supply, attrition, and cost-of-hire from labor-market APIs.
+- Competitive Data: Live job-board activity, salary benchmarks, and employer-brand sentiment.
+- AI Outputs: LFI and DMFI composite scores for geography favorability and market competitiveness.
 
-The first step to world-class documentation is setting up your editing environments.
+## 🛠️ Key Capabilities
+ 🔹 AI-Driven Heatmaps  
+Spot high-density talent clusters by skill, city, or region with real-time visual insights to guide sourcing strategy.
 
+🔹 Integration with Workforce Planning  
+Align headcount forecasts with actual market availability to reduce sourcing inefficiencies and hiring delays.
+
+🔹 Competitive Insights in Real Time  
+Monitor competitor hiring trends, salary benchmarks, and talent movement to stay ahead in high-demand skill areas.
+
+🔹 Skill-Based Demand-Supply Analytics  
+Access deep, skill-level market signals to plan demand intelligently, ensuring timing and location match talent supply.
+
+OR
+### 🛠️ Key Capabilities 
+> 
+| Capability                          | Description                                                                                                       |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| **Location Intelligence (LFI)**     | Identifies optimal sourcing zones using AI-powered insights on talent availability, cost, and closure success.    |
+| **Competitive Intelligence (DMFI)** | Benchmarks role attractiveness based on salary data, skill scarcity, and competitor hiring velocity.              |
+| **SWTT Mapping**                    | Structures job demands into Skill, Will, Task, and Time dimensions to power AI matching and downstream workflows. |
+| **AI-Driven Market Analytics**      | Integrates labor trends, supply–demand dynamics, and closure history to guide role design decisions.              |
+| **Demand Structuring**              | Packages job inputs into a structured format for sourcing, screening, interview planning, and analysis.           |
+
+## 🧩 Core Subsystems  
+Each card leads to an in-depth page featuring calculations, visualizations, and key strategic insights.
 <CardGroup cols={2}>
   <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
+    title="Location Intelligence"
+    icon="location-dot"
+    href="/RecruitEdge/features/LFI"
   >
-    Get your docs set up locally for easy development
+    >Identifies the best hiring locations using AI-driven insights on talent supply, cost, and success rates.
+    >
+    > <span style={{ color: '#007AFF' }}> Learn More →</span>
   </Card>
   <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
+    title="Competitive Intelligence"
+    icon="chart-line"
+    href="/RecruitEdge/features/DMFI"
   >
-    Preview your changes before you push to make sure they're perfect
+    >Real-time benchmarking of role attractiveness against external market data.
+    >
+    ><span style={{ color: '#007AFF' }}> Learn More →</span>
   </Card>
 </CardGroup>
 
-## Make it yours
+## ⚙️ How It Works 
+#### **Step 1: Requirement Gathering**
+>
+Recruiters initiate demand creation by providing foundational job inputs that feed into downstream intelligence layers.  
+- Job title, department, experience range, number of Openings
+- Hiring urgency and replacement context
+- Must-have skills and any preferred locations
+>
+**_Optional Early Branch:_ Location Confirmation**  
+Prompt: “Have you finalized your target hiring location(s)?”  
+If Yes → Proceed directly to Location Favorability Index (LFI)  
+If No → System:
+- Suggests intelligent defaults based on past hires and role patterns
+- Enables searchable, ranked global location input powered by LFI
 
-Update your docs to your brand and add valuable content for the best user conversion.
+#### **Step 2: Location Favorability Index (LFI)**
+>
+| Factor                | What It Evaluates                                                            | 
+| ----------------------| -----------------------------------------------------------------------|
+| Talent Density        | Number of candidates matching the SWTT profile in each location        | 
+| Offer Success Rate    | Past offer-to-join conversion for similar roles                        | 
+| Cost Index            | Composite of average salary + operational overhead                     | 
+| Attrition Probability | Historical turnover rates for the region or role                       |
+| Closure Velocity      | Time-to-fill for similar roles in prior cycles                         |
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+**Visual Output:**
+- Heatmaps of best-fit locations
+- Ranked sourcing zones with LFI scores
+- Labeling: “High-fit”, “Low-velocity”, “High-cost” 
+
+🔄 _If live market data is unavailable, LFI is inferred from similar historical roles with matching SWTT profiles._
+
+#### **Step 3: Dynamic Market Fit Index (DMFI)**
+>
+| Factor                | What It Evaluates                                                            | 
+| ----------------------| -----------------------------------------------------------------------|
+| Compensation Fit      | How the offered salary compares to the current market benchmark        | 
+| Skill Demand/Supply   | Ratio of market demand to talent supply for the required skills        | 
+| Competitor Activity   | Number of open jobs in similar companies for this role                 | 
+| Role Scarcity         | Uniqueness or niche-level of the skill set (risk of low volume)        |
+
+**Visual Output:**
+- Role attractiveness card with DMFI score
+- Recommendations: “Adjust salary,” “Widen skills,” or “Consider alternate locations”
+- Graphical comparison of internal vs. market compensation
+
+#### **Step 4: SWTT Mapping**  
+>
+After finalizing location and compensation intelligence, the job role is decomposed using the SWTT framework:
+| SWTT Dimension | Description                                              |
+| -------------- | -------------------------------------------------------- |
+| **Skill**      | Functional, domain, and technical capabilities required  |
+| **Will**       | Behavioral traits, motivation, alignment with org values |
+| **Task**       | Core responsibilities, expected deliverables             |
+| **Time**       | Timelines, availability, project duration or urgency     |
+- Parsed using AI from job context and recruiter input
+- Recruiters can edit each section before confirmation
+- Output forms the Digital Talent Twin used for screening, interviews, and evaluations
+
+ 💡 _This structure becomes the foundational input for AI-powered screening, interview design, and scoring engines._
+
+## 🧑‍💻 How to Use It
+
+1. Go to Recruit Edge → Create New Demand
+2. Fill in the role’s basic information (title, skills, urgency)
+3. Review the LFI map to select optimal sourcing geographies
+4. Analyze DMFI insights to refine salary or skill strategy
+5. Review or edit SWTT mapping
+6. Save and publish the demand (JD creation console in next feature)
+
+## 📐 AI Models & Calculations
+>
+| Model         | Description                                                                                  |
+| --------------| ---------------------------------------------------------------------------------------------------- |
+| LFI           | Weighted index using talent supply, cost, attrition, and success rates to rank location favorability |
+| DMFI          | Weighted index using salary alignment, skill demand, competitor hiring, and role competitiveness     |
+
+_Weights are dynamically adjusted based on role archetype and organizational priority_
+
+##  📌 Conclusion
+The Demand Generation module lays the foundation for every successful hire by transforming raw requisitions into data-driven, market-aligned job demands. 
+By combining Location Favorability (LFI), Dynamic Market Fit (DMFI) and SWTT mapping, recruiters gain clear guidance on where to hire, how competitive the role is, and exactly which skills, motivations and timelines matter most. 
+With these insights in hand and the demand structured — you are ready to move on to crafting the candidate-facing job description in the Branding & Employer Value Proposition (EVP) module.
