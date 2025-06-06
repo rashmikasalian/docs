@@ -1,0 +1,43 @@
+---
+title: High Level System Design
+---
+Explains the flow of data and algorithms from brand asset ingestion to JD generation and feedback loops.
+- Data acquisition & tagging
+- LLM-based JD generation
+- DEI filtering
+- Persona-matched content recommendations
+- Sentiment and DEI tracking
+- Real-time optimization engine
+
+### Calculation Flow
+##### **1. Data Acquisition**
+- Pull brand guidelines, leadership quotes, cultural elements from internal repositories.
+- Fetch historical JD data and performance metrics.
+- Gather sentiment updates from social media or review sites
+
+##### **2. NLP & Content Generation**
+- JD Generator (LLM-based): Fine-tune on curated data to produce new postings or revise existing ones.
+- DEI Filter: Use inclusive language checkers to flag potentially biased terms, substitute with recommended phrasing.
+
+##### **3. Content-Based Recommendation**
+- Match role/discipline with relevant culture statements or leadership quotes.
+- Insert or remove content blocks based on candidate persona insights (early career, experienced professional, etc.).
+
+##### **4. Sentiment & DEI Tracking**
+- Monitor external brand sentiment tied to new JDs or brand campaigns.
+- Adjust brand messaging strategies if negative or low engagement is detected, especially around DEI topics.
+
+##### **5. Real-Time Optimizer**
+- Continuously refine JDs if real-time feedback indicates low click-through or sentiment dips.
+- Integrate an auto-update feature that modifies wording to better align with inclusive standards.
+
+## Sample Formula (Conceptual)
+Below is a simplified conceptual approach rather than a strict mathematical formula:  
+- **JD Content**=LLM(Role Requirements+Brand Tone+Leadership Quotes+Culture Snippets)
+- A separate scoring mechanism tracks  
+  **EVP Score** = α×JDPerformance+β×SentimentRating+γ×DEICompliance
+- **JDPerformance** can be measured by apply rate, clicks, or conversion.
+- **SentimentRating** might come from social listening or Glassdoor rating changes.
+- **DEI Compliance** reflects alignment with inclusive language guidelines.
+
+This high-level design illustrates a robust, end-to-end system where brand-driven content, inclusive language, and persona alignment converge to generate intelligent job descriptions. From data ingestion to real-time optimization, every step ensures the JD is not only algorithmically precise but also human-centric and responsive. The integrated scoring system further enables continuous improvement, making the content adaptive to both market feedback and internal brand standards.

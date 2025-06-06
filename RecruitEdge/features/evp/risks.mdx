@@ -1,0 +1,14 @@
+---
+title: Implementation Risks & Mitigation
+---
+Highlights known challenges and how the system handles them.
+
+| **Risk**                        | **Description**                                                                                               | **Mitigation**                                                                                     |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| **Over-Fitting Brand Tone**     | The LLM might produce overly repetitive or shallow statements if brand guidelines are too narrow.             | Periodically refresh training data with new or varied brand content.                               |
+| **DEI Data Gaps**               | Lack of comprehensive or updated inclusive language dictionaries for new roles or regional usage.             | Partner with DEI experts; maintain a living dictionary that evolves with feedback.                 |
+| **Sentiment Misinterpretation** | Social mentions can be sarcastic or context-specific, leading to flawed positivity/negativity classification. | Use robust sentiment analysis models, incorporate manual checks for borderline cases.              |
+| **Brand & Legal Compliance**    | Overuse of leadership quotes might conflict with PR guidelines, or certain claims might be unverified.        | Implement a legal/PR review pipeline for new statements or disclaimers for brand statements.       |
+| **Biased LLM Outputs**          | Large Language Models can inadvertently embed biases from training data.                                      | Carefully curate training sets and apply bias-detection methods to the generated text.             |
+
+At Mantrika.ai, we recognize that with powerful AI capabilities come critical responsibilities. Our risk governance framework is designed to proactively address challenges like tone overfitting, DEI language gaps, and sentiment misinterpretation. By continuously evolving our models with expert-backed data, compliance checks, and ethical safeguards, we ensure that every JD generated through Mantrika is not only high-performing, but also inclusive, compliant, and brand-aligned.
