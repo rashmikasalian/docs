@@ -1,4 +1,143 @@
 ---
-title: Integrations & APIs
-description: "Welcome to the home of your new documentation"
+title: INTEGRATIONS 
 ---
+
+The Mantrika N Engine operates on the principle that AI is only as powerful as the data that fuels it. 
+Consequently, the algorithms within N are designed and tuned based on a broad range of data inputs—each 
+bringing unique nuances and value. This section provides an expanded view of the data sources and formats 
+that can be harnessed, highlighting their relevance to various stages of the 3A Framework (Attract, Acquire, Assimilate) 
+and the N Engine’s intelligence layers. 
+
+## 1.  Structured Enterprise Data  
+>
+| **Data Source**                       | Description                                                             | Examples / Use Cases                                 |
+|--------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------|
+| **ATS Logs**                         | Tracks candidate statuses and timestamps.                               | Funnel analytics, drop-off prediction.               |
+| **HRIS**                             | Holds employee demographics, job history, compensation.                 | Internal mobility, workforce planning.               |
+| **Performance Management**           | Stores reviews, KPIs, 360 feedback.                                     | Pre/post-hire performance correlation.               |
+| **Time & Attendance Systems**        | Clock-ins, leave, timesheets.                                           | Burnout detection, resource allocation.              |
+| **LMS Databases**                    | Tracks courses, certifications, completions.                            | Skill gap analysis, upskilling triggers.             |
+| **Compensation / Payroll Systems**   | Salary, variable pay, payroll logs.                                     | Internal equity, offer benchmarking.                 |
+| **Contract Management Systems**      | Signed offers, NDAs, contract terms.                                    | Offer acceptance tracking, compliance.               |
+| **Org Structure Data**               | Org charts, reporting lines.                                            | Manager matching, workforce planning.                |
+| **Succession Planning**              | Future leaders, successors, HiPo talent.                                | Promotion pathing, internal mobility.                |
+| **Workforce Planning Data**          | Budget, forecast, hiring targets.                                       | Strategic workforce alignment.                       |
+| **Benefits Administration**          | Health, wellness, DEI enrollment.                                       | Retention modeling, benefits optimization.           |
+| **ERP Data**                         | Financials intersecting HR.                                             | Headcount cost modeling.                             |
+| **M&A / Restructure Info**           | Acquisitions, reorg data.                                               | Transition planning, consolidation logic.            |
+| **Job Evaluation & Grading**         | Role levels, compensation bands.                                        | Consistent leveling, benchmarking.                   |
+| **Compliance & Audit Logs**          | Regulatory checks, audit trails.                                        | Governance, record validation.                       |
+
+## 2.  Semi-Structured & Unstructured Data
+> 
+| **Data Source**                         | Description                                                  | Examples / Use Cases                                 |
+|----------------------------------------|--------------------------------------------------------------|------------------------------------------------------|
+| **Resumes & CVs**                      | Parsed text documents.                                       | Skill extraction, SWTT scoring.                      |
+| **Job Descriptions**                   | Role details and branding.                                   | JD generation, DEI check.                            |
+| **Interview Recordings**              | Audio/video of interviews.                                   | Sentiment, soft skill scoring.                       |
+| **Email Correspondences**              | Recruiter–candidate email threads.                           | Engagement tracking, response sentiment.             |
+| **Feedback Forms**                     | Interviewer notes, surveys.                                  | Bias detection, model refinement.                    |
+| **Internal Collaboration (Slack, Teams)** | Chat logs, discussions.                                   | Assimilation pattern analysis.                       |
+| **Meeting Minutes**                    | Hiring panel summaries, project updates.                     | Compliance, skill refinement.                        |
+| **Intranet & Wiki**                    | Culture docs, onboarding guides.                             | Fit scoring, onboarding content.                     |
+| **Survey Responses**                   | eNPS, pulse feedback.                                        | Assimilation, retention risk.                        |
+| **Offer Letters & Negotiations**       | Final compensation, clauses.                                 | Offer prediction, negotiation logic.                 |
+| **Email Attachments**                  | Portfolios, cover letters.                                   | Skill validation, experience sampling.               |
+| **Onboarding Session Recordings**      | Orientation videos.                                          | Engagement tracking, AI Q&A.                         |
+| **CSR / Cultural Docs**                | DEI or social stories.                                       | Employer brand signal.                               |
+| **Event Decks**                        | Conference decks, job fair presentations.                    | Outreach content, candidate persona match.           |
+| **Knowledge Repositories**            | Product/service info.                                        | Role-based learning, personalization.                |
+
+## 3.  External Data Sources
+> 
+| **Data Source**                         | Description                                                 | Examples / Use Cases                                 |
+|----------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| **Public Job Boards**                  | Aggregated external job data.                               | Labor market trends, role demand.                    |
+| **LinkedIn / Professional Platforms**  | Public profiles, company info.                              | Passive sourcing, skill verification.                |
+| **Company Review Sites**               | Glassdoor, Kununu.                                          | EVP benchmarking, sentiment analysis.                |
+| **GitHub, Stack Overflow**             | Developer activity.                                         | Portfolio mining, tech skill validation.             |
+| **Salary Surveys (Payscale, etc.)**    | Industry pay data.                                          | Compensation benchmarking.                           |
+| **Govt Labor Stats (BLS, Eurostat)**   | Public workforce data.                                      | Skill gap prediction, location strategy.             |
+| **Cost-of-Living Indexes**             | Regional expense data.                                      | Relocation offers, CTC adjustments.                  |
+| **Competitor Career Pages**            | Scraped job posts, expansions.                              | Competitor benchmarking.                             |
+| **Patent Databases**                   | Innovation tracking.                                        | Skill foresight, domain evolution.                   |
+| **Economic Indicators**                | Macro trends, GDP data.                                     | Workforce planning, demand correlation.              |
+| **Freelance Platforms**                | Gig economy data.                                           | Alternate hiring strategies.                         |
+| **External Assessment Providers**      | HackerRank, psychometric vendors.                           | Skill score integration.                             |
+| **University/Academic Sites**          | Fresh graduate talent data.                                 | Campus hiring, internship pipelines.                 |
+| **Global Skill Taxonomies (ESCO/O*NET)** | Skill definitions, role classifications.                  | Alignment with global standards.                     |
+| **Social Listening Platforms**         | Reddit, Twitter.                                            | Trend detection, brand monitoring.                   |
+
+## 4.  Behavioral & Interaction Data
+> 
+| **Data Source**                         | Description                                                 | Examples / Use Cases                                 |
+|----------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| **Chatbot Logs**                       | Conversations with AI.                                      | FAQ optimization, candidate intent.                  |
+| **Recruiting CRM**                     | Campaign data, opens/clicks.                                | Outreach efficiency, lead scoring.                   |
+| **Career Site Clickstream**            | Browse patterns, time on site.                              | Content optimization, interest prediction.           |
+| **Notification Responses**             | Nudge acceptance or ignore behavior.                        | Channel tuning, retry strategy.                      |
+| **Onboarding Portal Usage**            | Module completions, time logs.                              | Assimilation tracking.                               |
+| **E-Learning Quizzes**                 | Learning quiz scores.                                       | Readiness signal, re-engagement triggers.            |
+| **Calendar/Email Activity**            | Collaboration metadata.                                     | Integration tracking.                                |
+| **Slack/Teams Participation**          | Engagement in communication channels.                       | Belonging signal, assimilation health.               |
+| **Interview Scheduling Logs**          | Promptness, no-shows.                                       | Offer likelihood, seriousness metric.                |
+| **Buddy Program Logs**                 | Interaction frequency with mentor.                          | Quality of onboarding, early feedback.               |
+| **Support Tickets**                    | HR queries, help requests.                                  | Process friction signals.                            |
+| **Internal Tool Usage**                | Time spent in CRM/codebases.                                | Productivity alignment, flag risk.                   |
+| **Virtual Event Attendance**           | Job fair or webinar logs.                                   | Candidate branding engagement.                       |
+| **Messaging Preferences**              | Cadence, channel, tone preferences.                         | Custom outreach.                                     |
+| **Internal Reactions**                 | Upvotes, likes on forums.                                   | Content resonance, cultural participation.           |
+
+## 5.  Reference & Verification Data
+> 
+| **Data Source**                         | Description                                                 | Examples / Use Cases                                 |
+|----------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
+| **Reference Checks**                  | Feedback from previous colleagues.                          | Trust scores, anomaly detection.                     |
+| **Education Credentials**             | Degrees, transcripts.                                       | Verification, skill mapping.                         |
+| **Certifications**                    | Technical licenses, AWS, PMP, etc.                          | Match to JD, weight scoring.                         |
+| **Criminal Background Checks**        | Region-specific legal data.                                 | Compliance assurance.                                |
+| **Credit Background Checks**          | Credit history (if lawful).                                 | Financial reliability for sensitive roles.           |
+| **Blockchain Credentials**            | Tamper-proof work/degree history.                           | Instant verification.                                |
+| **Identity Verification**             | National ID, passport.                                      | Anti-fraud, work eligibility.                        |
+| **Employment History**                | Third-party employment checks.                              | Resume validation.                                   |
+| **Immigration/Visa Status**           | Legal eligibility, work permits.                            | Onboarding planning.                                 |
+| **Peer Endorsements**                 | LinkedIn endorsements, reviews.                             | Skill validation.                                    |
+| **Risk Scoring Engines**              | Trulioo, reputation scoring.                                | Fraud flagging, trust indices.                       |
+| **Professional Memberships**          | Affiliation with recognized bodies.                         | Domain expertise.                                    |
+| **Global Blacklists**                 | OFAC, Interpol lists.                                       | High-sensitivity compliance.                         |
+| **Vendor BGV Reports**                | Background checks from external vendors.                    | Aggregated verification.                             |
+| **Negative Media Searches**          | News/web scans for adverse mentions.                        | Brand safety, risk mitigation.                       |
+
+## 6.  Extended Ecosystem & Post-Hire Data
+> 
+| **Data Source**                          | Description                                                              | Examples / Use Cases                                                 |
+|-----------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Collaboration Analytics (ONA)**       | Metadata of email/IM exchanges mapping internal networks                 | Identify knowledge hubs, team-buddy pairing                          |
+| **Employee Surveys & Engagement Polls** | eNPS, pulse, and sentiment surveys                                       | Culture fit, early risk, retention signals                           |
+| **Performance Review Records**          | Goal progress, KPI feedback, cross-functional reviews                    | Hire-to-performance correlation, model improvement                   |
+| **Internal Mobility Logs**              | Promotions, lateral moves, job switches                                  | Succession planning, mobility program effectiveness                  |
+| **Alumni Network Data**                 | Post-exit roles, rehire potential, contact info                          | Boomerang hiring, referrals, brand advocacy                          |
+| **Career Site Analytics**               | Bounce rates, visitor journeys, conversion metrics                       | Optimize career site UX, brand engagement                           |
+| **L&D Portal Usage**                    | Course enrollments, module completions, time spent                       | Readiness for role shift, upskilling path                            |
+| **Buddy/Mentor Program Feedback**       | Logs and feedback from mentor interactions                               | Assimilation health, pairing optimization                           |
+| **Virtual Event Participation**         | Attendance, Q&A participation in internal/external events                | Identify SMEs, engagement with learning initiatives                  |
+| **Team-based Goal Tracking Tools**      | Trello, Jira, OKRs, project tracking tools                               | Align contributions to org-wide goals                               |
+| **Exit Interview Data**                 | Final feedback, exit reasons, suggestions                                | Retention modeling, policy improvements                             |
+| **Cultural/Social Engagement Logs**     | Volunteering, celebrations, team rituals                                 | Measure assimilation, DEI & inclusion                               |
+| **Peer Recognition Platforms**          | Shout-outs, kudos, micro-bonuses (e.g., Bonusly)                         | Spot culture champions, peer-perceived performance                  |
+| **Manager Check-In Records**           | Notes from 1:1s, performance/goal coaching sessions                      | Identify skill mismatch early, continuous improvement loops         |
+| **HR Service Desk Tickets**             | Queries, complaints, onboarding issues                                   | Identify friction, optimize internal policies                        |
+
+## Conclusion
+Combining these structured, semi-structured, unstructured, and behavioral data sources enables the Mantrika N Engine to:
+- Build robust candidate and employee profiles (Digital Talent Twin) that update continuously through the 3A Framework.
+- Enhance decision-making at every stage (Attract, Acquire, Assimilate) via predictive analytics, AIdriven personalization, and risk intelligence.
+- Foster a self-improving system, where feedback loops from on-the-job performance and engagement data re-inform sourcing, screening, and onboarding.
+- Maintain ethical and compliance standards, leveraging reference and verification data in a secure, privacy-conscious manner.
+
+By integrating these diverse datasets, Mantrika N positions itself as a deeply contextual, enterprise-grade 
+intelligence layer, moving beyond traditional rule-based recruitment to deliver insight-driven, 
+personalized, and bias-mitigatedtalent experiences.
+
+👉 Next:
+- [Back to Overview →](/RecruitEdge/overview)

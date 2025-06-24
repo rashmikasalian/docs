@@ -14,33 +14,41 @@
         "tab": "Guides",
         "groups": [
           {
+            "group": "Mantrika.ai",
+            "pages": [
+              "index"
+            ]
+          },
+          {
             "group": "Recruit Edge",
             "pages": [
-               {
-                "group": "Features",            
+              "RecruitEdge/agent_overview",
+              {
+                "group": "Features",
                 "pages": [
-                  "RecruitEdge/features/index",
-                  "RecruitEdge/features/EVP",
-                  "RecruitEdge/features/sourcing",
-                  "RecruitEdge/features/screening",
-                  "RecruitEdge/features/assessment",
-                  "RecruitEdge/features/interview"
-                         ]
-               },
+                  "RecruitEdge/features/ATTRACT",
+                  "RecruitEdge/features/ACQUIRE",
+                  "RecruitEdge/features/ASSIMILATE"
+                ]
+              },
               "RecruitEdge/kpi_metrics",
-              "RecruitEdge/calculations",
               "RecruitEdge/integrations"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "N-1 Engine",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "N-1/overview",
+              "N-1/discover-assess",
+              "N-1/engage-develop"
+            ]
+          },
+          {
+            "group": "N+1 Engine",
+            "pages": [
+              "N+1/overview",
+              "N+1/talent-mapping",
+              "N+1/internal-mobility"
             ]
           }
         ]
@@ -87,8 +95,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/mantrika-color.svg",
+    "dark": "/logo/mantrika-dark.svg"
   },
   "navbar": {
     "links": [
